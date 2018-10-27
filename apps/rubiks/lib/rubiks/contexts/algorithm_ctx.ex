@@ -11,6 +11,10 @@ defmodule Rubiks.AlgorithmCtx do
     |> :rand.uniform()
   end
 
+  def random_alg do
+    get(random_id())
+  end
+
   def create(attrs \\ %{}) do
     %Algorithm{}
     |> Algorithm.changeset(prepare_attrs(attrs))
