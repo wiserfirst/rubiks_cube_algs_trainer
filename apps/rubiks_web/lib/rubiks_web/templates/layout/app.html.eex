@@ -30,6 +30,8 @@
       </main>
 
     </div> <!-- /container -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
+    <script src="<%= static_path(@conn, "/js/roofpig_and_three.js") %>"></script>
   </body>
 </html>

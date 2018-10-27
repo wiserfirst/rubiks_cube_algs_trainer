@@ -1,6 +1,7 @@
 <div class="jumbotron">
   <h2><%= gettext "Welcome to %{name}!", name: "Phoenix" %></h2>
   <p class="lead">A productive web framework that<br />does not compromise speed and maintainability.</p>
+  <div class="roofpig width200" data-config="alg=R U' R' d R' U2 R U R' U2 R|hover=1|speed=500|flags=showalg|colors=U:y F:b R:r B:g L:o D:w" style="position: relative; font-family: &quot;Lucida Sans Unicode&quot;, &quot;Lucida Grande&quot;, sans-serif; border: 2px solid rgb(238, 238, 238); cursor: default;"> </div>
 </div>
 
 <div class="row marketing">
