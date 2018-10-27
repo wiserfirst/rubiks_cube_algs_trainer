@@ -12,8 +12,12 @@ defmodule Rubiks.Application do
   def start(_type, _args) do
     import Supervisor.Spec, warn: false
 
-    Supervisor.start_link([
-      supervisor(Rubiks.Repo, []),
-    ], strategy: :one_for_one, name: Rubiks.Supervisor)
+    Supervisor.start_link(
+      [
+        supervisor(Rubiks.Repo, [])
+      ],
+      strategy: :one_for_one,
+      name: Rubiks.Supervisor
+    )
   end
 end

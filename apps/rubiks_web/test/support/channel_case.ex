@@ -25,13 +25,13 @@ defmodule RubiksWeb.ChannelCase do
     end
   end
 
-
   setup tags do
     :ok = Ecto.Adapters.SQL.Sandbox.checkout(Rubiks.Repo)
+
     unless tags[:async] do
       Ecto.Adapters.SQL.Sandbox.mode(Rubiks.Repo, {:shared, self()})
     end
+
     :ok
   end
-
 end
