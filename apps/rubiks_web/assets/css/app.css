@@ -47,7 +47,6 @@
     line-height: 22px;
     height: 27px !important;
     margin-right: 6px;
-    background: url(img/sprite.png) no-repeat -20px 0px #d5d7d8;
     text-indent: -117px;
     font-size: 10px !important;
     overflow: hidden;
@@ -75,12 +74,9 @@
 .roofpig-count {
     font-weight: bold;
     color: #2e649e;
-	width: auto;
-	margin-left: 2px;
-	display: inline-block;
-}
-.roofpig-button-enabled {
-    background: url(img/sprite.png) no-repeat -20px 0px #4287d2;
+    width: auto;
+    margin-left: 2px;
+    display: inline-block;
 }
 .roofpig-button-enabled:hover {
     background-color: #2e649e;
@@ -108,3 +104,6 @@
 	display: none;
 }
 /*Roofpig END*/
+
+/* Sidebar */
+
