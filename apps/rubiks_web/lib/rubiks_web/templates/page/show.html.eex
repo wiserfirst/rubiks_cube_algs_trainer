@@ -1,0 +1,7 @@
+<div class="jumbotron">
+  <h2>F2L</h2>
+  <p class="lead">Want to learn the algorithms faster?</p>
+  <%= render "roofpig.html", alg: @alg %>
+</div>
+
+<%= render "resources.html" %>

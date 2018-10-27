@@ -17,7 +17,9 @@ defmodule RubiksWeb.Router do
     # Use the default browser stack
     pipe_through(:browser)
 
-    get "/", PageController, :index
+    get("/", PageController, :index)
+    resources("/algs", PageController, only: [:index, :show])
+    get("/random", PageController, :random)
   end
 
   # Other scopes may use custom stacks.
