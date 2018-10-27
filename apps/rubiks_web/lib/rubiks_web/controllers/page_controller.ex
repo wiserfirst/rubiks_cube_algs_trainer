@@ -7,9 +7,10 @@ defmodule RubiksWeb.PageController do
     render(conn, "index.html", alg: alg)
   end
 
-  def show(conn, %{"id" => id}) do
-    alg = AlgorithmCtx.get(id)
-    render(conn, "show.html", alg: alg)
+  def show(conn, %{"id" => text}) do
+    alg = AlgorithmCtx.get_by_text(text)
+    sidebar = AlgorithmCtx.sidebar_content()
+    render(conn, "show.html", alg: alg, sidebar: sidebar)
   end
 
   def random(conn, _params) do

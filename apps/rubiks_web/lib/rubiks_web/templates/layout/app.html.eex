@@ -12,20 +12,19 @@
   </head>
 
   <body>
-    <div class="container">
-      <header class="header">
-        <h2>Rubik's Cube Algorithms trainer</h2>
-      </header>
-
-      <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
-      <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
-
-      <main role="main">
-        <%= render @view_module, @view_template, assigns %>
-      </main>
-
-    </div> <!-- /container -->
+    <div class="wrapper">
+      <%= render @view_module, @view_template, assigns %>
+    </div>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $("#sidebarCollapse").on("click", function() {
+          $("#sidebar").toggleClass("active");
+          $(this).toggleClass("active");
+        });
+      });
+    </script>
   </body>
 </html>

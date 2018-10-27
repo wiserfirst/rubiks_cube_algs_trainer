@@ -1,1 +1,4 @@
-<div class="roofpig width200" data-config="alg=<%= @alg.solution %>|hover=1|speed=500|flags=showalg|colors=U:y F:b R:r B:g L:o D:w" style="position: relative; font-family: &quot;Lucida Sans Unicode&quot;, &quot;Lucida Grande&quot;, sans-serif; border: 2px solid rgb(238, 238, 238); cursor: default;"></div>
+<div class="roofpig width250" data-config="alg=<%= @alg.solution %>|colored=D* F R FR U|hover=1|speed=500|flags=showalg|colors=U:y F:b R:r B:g L:o D:w"></div>
+<div>
+  <span>Setup: <%= @alg.setup_txt %></span>
+</div>

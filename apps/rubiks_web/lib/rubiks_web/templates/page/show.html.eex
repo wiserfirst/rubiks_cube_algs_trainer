@@ -1,7 +1,40 @@
-<div class="jumbotron">
-  <h2>F2L</h2>
-  <p class="lead">Want to learn the algorithms faster?</p>
-  <%= render "roofpig.html", alg: @alg %>
+<!-- Sidebar Holder -->
+<nav id="sidebar">
+  <ul class="list-unstyled components">
+    <%= Enum.map(@sidebar, fn {title, items} -> %>
+      <p class="sub-title"><%= title %></p>
+      <%= Enum.map(items, fn item -> %>
+      <li>
+        <a class="algDescr" href="/algs/<%= item.text %>">
+          <span class="algImgCont"><img src="https://ruwix.com/pics/friedrich/<%= item.image_name %>"></span>
+          <span><%= item.text %></span>
+        </a>
+      </li>
+      <%= end) %>
+    <%= end) %>
+  </ul>
+</nav>
+
+<!-- Page Content Holder -->
+<div id="content">
+  <div class="container">
+    <header class="header">
+      <h2>Rubik's Cube Algorithms trainer</h2>
+    </header>
+
+    <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
+    <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
+
+    <main role="main">
+      <div class="jumbotron">
+        <h2>F2L</h2>
+        <p class="lead">Want to learn the algorithms faster?</p>
+        <%= render "roofpig.html", alg: @alg %>
+      </div>
+    </main>
+
+  </div> <!-- /container -->
+
+  <%= render "resources.html" %>
 </div>
 
-<%= render "resources.html" %>
