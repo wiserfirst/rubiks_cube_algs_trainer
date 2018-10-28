@@ -34,6 +34,7 @@
         <%= render RubiksWeb.SharedView, "resources.html" %>
       </div>
     </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
   </body>
 </html>
