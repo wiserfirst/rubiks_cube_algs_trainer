@@ -19,7 +19,6 @@ defmodule RubiksWeb.Router do
 
     get("/", PageController, :index)
     resources("/algs", PageController, only: [:index, :show])
-    get("/random", PageController, :random)
   end
 
   # Other scopes may use custom stacks.

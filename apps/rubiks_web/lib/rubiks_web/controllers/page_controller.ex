@@ -9,12 +9,6 @@ defmodule RubiksWeb.PageController do
 
   def show(conn, %{"id" => text}) do
     alg = AlgorithmCtx.get_by_text(text)
-    sidebar = AlgorithmCtx.sidebar_content()
-    render(conn, "show.html", alg: alg, sidebar: sidebar)
-  end
-
-  def random(conn, _params) do
-    id = AlgorithmCtx.random_id()
-    redirect(conn, to: page_path(conn, :show, id))
+    render(conn, "show.html", alg: alg)
   end
 end

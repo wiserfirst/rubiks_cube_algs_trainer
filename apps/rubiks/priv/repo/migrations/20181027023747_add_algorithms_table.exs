@@ -5,7 +5,7 @@ defmodule Rubiks.Repo.Migrations.AddAlgorithmsTable do
     create table(:algorithms) do
       add(:category, :string)
       add(:solution, :string)
-      add(:setup, :string)
+      add(:setup_txt, :string)
 
       timestamps(type: :timestamp)
     end

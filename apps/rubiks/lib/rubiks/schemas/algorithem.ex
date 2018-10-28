@@ -5,7 +5,7 @@ defmodule Rubiks.Algorithm do
   schema "algorithms" do
     field(:category, :string)
     field(:solution, :string)
-    field(:setup, :string)
+    field(:setup_txt, :string)
 
     timestamps(type: :utc_datetime)
   end
@@ -16,7 +16,7 @@ defmodule Rubiks.Algorithm do
   ]
 
   @optional_fields [
-    :setup
+    :setup_txt
   ]
 
   def changeset(existing, params \\ :empty) do
