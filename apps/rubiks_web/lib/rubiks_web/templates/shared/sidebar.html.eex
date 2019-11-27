@@ -6,7 +6,7 @@
       <%= Enum.map(items, fn item -> %>
         <li>
           <a class="algDescr" href="/algs/<%= item.text %>">
-            <span class="algImgCont"><img src="<%= static_path(@conn, "/images/#{item.image_name}") %>"></span>
+            <span class="algImgCont"><img src="<%= Routes.static_path(@conn, "/images/#{item.image_name}") %>"></span>
             <span><%= item.text %></span>
           </a>
         </li>

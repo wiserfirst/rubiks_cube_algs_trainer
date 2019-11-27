@@ -37,7 +37,7 @@ defmodule Rubiks.Mixfile do
   defp deps do
     [
       {:postgrex, ">= 0.0.0"},
-      {:ecto, "~> 2.1"}
+      {:ecto_sql, "~> 3.1"}
     ]
   end
 

@@ -38,7 +38,7 @@ defmodule RubiksWeb do
       # Use all HTML functionality (forms, tags, etc)
       use Phoenix.HTML
 
-      import RubiksWeb.Router.Helpers
+      alias RubiksWeb.Router.Helpers, as: Routes
       import RubiksWeb.ErrorHelpers
       import RubiksWeb.Gettext
     end

@@ -1,7 +1,7 @@
 defmodule RubiksWeb.Endpoint do
   use Phoenix.Endpoint, otp_app: :rubiks_web
 
-  socket("/socket", RubiksWeb.UserSocket)
+  socket("/socket", RubiksWeb.UserSocket, websocket: [timeout: 45_000])
 
   # Serve at "/" the static files from "priv/static" directory.
   #
@@ -27,7 +27,7 @@ defmodule RubiksWeb.Endpoint do
   plug(Plug.Parsers,
     parsers: [:urlencoded, :multipart, :json],
     pass: ["*/*"],
-    json_decoder: Poison
+    json_decoder: Jason
   )
 
   plug(Plug.MethodOverride)

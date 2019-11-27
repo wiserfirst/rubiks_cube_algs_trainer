@@ -2,9 +2,9 @@ use Mix.Config
 
 # Configure your database
 config :rubiks, Rubiks.Repo,
-  adapter: Ecto.Adapters.Postgres,
   username: "postgres",
-  password: "postgres",
+  password: "",
+  port: 15_432,
   database: "rubiks_dev",
   hostname: "localhost",
   pool_size: 10
