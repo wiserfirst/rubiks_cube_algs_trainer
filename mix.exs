@@ -16,7 +16,7 @@ defmodule Rubiks.Umbrella.Mixfile do
 
   defp aliases do
     [
-      "ecto.setup": ["ecto.create", "ecto.migrate", "run apps/rubiks/priv/repo/seeds.exs"],
+      "ecto.setup": ["ecto.migrate", "run apps/rubiks/priv/repo/seeds.exs"],
       "ecto.reset": ["ecto.drop", "ecto.setup"],
       test: ["ecto.reset", "ecto.migrate", "test"]
     ]
