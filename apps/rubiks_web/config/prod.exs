@@ -15,5 +15,6 @@ use Mix.Config
 # which you typically run after static files are built.
 config :rubiks_web, RubiksWeb.Endpoint,
   url: [scheme: "https", host: "rubiks.wiserfirst.com", port: 443],
+  force_ssl: [rewrite_on: [:x_forwarded_proto]],
   secret_key_base: Map.fetch!(System.get_env(), "SECRET_KEY_BASE"),
   server: true
