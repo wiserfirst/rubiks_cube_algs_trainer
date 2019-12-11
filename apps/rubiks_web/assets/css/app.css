@@ -1,6 +1,8 @@
 /* This file is for your main application css. */
 
-.width200 {	width: 200px;	}
+.width200 {
+  width: 200px;
+}
 /*Roofpig BEGIN*/
 .roofpig:before,.roofpig:after {
   content: " ";
@@ -168,8 +170,8 @@ SIDEBAR STYLE
   overflow: scroll;
   top: 0;
   bottom: 0;
-  min-width: 350px;
-  max-width: 400px;
+  min-width: 25%;
+  max-width: 30%;
   background: #7386D5;
   color: #fff;
   transition: all 0.3s;
@@ -279,7 +281,7 @@ CONTENT STYLE
 ----------------------------------------------------- */
 
 #content {
-  margin-left: 500px;
+  margin-left: 45%;
   padding: 20px;
   min-height: 100vh;
   transition: all 0.3s;
@@ -295,8 +297,8 @@ MEDIAQUERIES
 ----------------------------------------------------- */
 
 @media (max-width: 768px) {
-  #sidebar {
-    margin-left: -250px;
+  #content {
+    margin-left: 35%;
   }
   #sidebar.active {
     margin-left: 0;
