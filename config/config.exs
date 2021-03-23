@@ -16,7 +16,7 @@ config :rubiks_web, RubiksWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "Z9PzwCv/I8KAO2SlB+BUZrxFH+gwzFPT/mbAz8tb8iYzdIPoFbQ8kkXqmH02j/zo",
   render_errors: [view: RubiksWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: RubiksWeb.PubSub, adapter: Phoenix.PubSub.PG2]
+  pubsub_server: RubiksWeb.PubSub
 
 # Configures Elixir's Logger
 config :logger, :console, format: "$time $metadata[$level] $message\n"

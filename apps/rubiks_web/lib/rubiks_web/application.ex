@@ -2,14 +2,11 @@ defmodule RubiksWeb.Application do
   use Application
 
   def start(_type, _args) do
-    import Supervisor.Spec
-
-    # Define workers and child supervisors to be supervised
     children = [
+      # Start the PubSub system
+      {Phoenix.PubSub, name: RubiksWeb.PubSub},
       # Start the endpoint when the application starts
-      supervisor(RubiksWeb.Endpoint, [])
-      # Start your own worker by calling: RubiksWeb.Worker.start_link(arg1, arg2, arg3)
-      # worker(RubiksWeb.Worker, [arg1, arg2, arg3]),
+      RubiksWeb.Endpoint
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
