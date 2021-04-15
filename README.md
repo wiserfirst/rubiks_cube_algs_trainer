@@ -100,3 +100,13 @@ in case you need it, but you need git 2.9.0 or higher for it to work.
 ```sh
 git -c http.extraheader="GIGALIXIR-CLEAN: true" push gigalixir master
 ```
+
+### Deploying to Heroku
+
+There is also a `heroku` branch that can be deployed to Heroku.
+
+Similarly just push it to `master` branch of the `heroku` remote:
+
+```sh
+git push heroku heroku:master
+```
