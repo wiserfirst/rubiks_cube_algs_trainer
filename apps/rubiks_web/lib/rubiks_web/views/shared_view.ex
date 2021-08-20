@@ -17,7 +17,7 @@ defmodule RubiksWeb.SharedView do
         %{image_name: "friedrich-f2l-41.png", text: "(R U' R') (U R U' R')"},
         %{image_name: "friedrich-f2l-43.png", text: "(F' U' F) (U F' U' F)"}
       ],
-      "3nd Corner in top, edge in middle" => [
+      "3rd Corner in top, edge in middle" => [
         %{image_name: "friedrich-f2l-12.png", text: "(R U R' U') (R U R' U') (R U R')"},
         %{image_name: "friedrich-f2l-48.png", text: "(R U' R') (d R' U R)"},
         %{image_name: "friedrich-f2l-44.png", text: "(U F' U F) (U F' U2 F)"},
@@ -25,7 +25,7 @@ defmodule RubiksWeb.SharedView do
         %{image_name: "friedrich-f2l-45.png", text: "(U' R U' R') (U' R U2 R')"},
         %{image_name: "friedrich-f2l-47.png", text: "(U' R U R') (d R' U' R)"}
       ],
-      "4nd Corner pointing outwards, edge in top layer" => [
+      "4th Corner pointing outwards, edge in top layer" => [
         %{image_name: "friedrich-f2l-26.png", text: "(R U' R' U) (d R' U' R)"},
         %{image_name: "friedrich-f2l-27.png", text: "(F' U F U') (d' F U F')"},
         %{image_name: "friedrich-f2l-28.png", text: "(U F' U2 F) (U F' U2 F)"},
@@ -39,7 +39,7 @@ defmodule RubiksWeb.SharedView do
         %{image_name: "friedrich-f2l-24.png", text: "(U F' U2 F U') (R U R')"},
         %{image_name: "friedrich-f2l-25.png", text: "(U' R U2 R' U) (F' U' F)"}
       ],
-      "5nd Corner pointing upwards, edge in top layer" => [
+      "5th Corner pointing upwards, edge in top layer" => [
         %{image_name: "friedrich-f2l-13.png", text: "(R U R' U') U' (R U R' U') (R U R')"},
         %{image_name: "friedrich-f2l-14.png", text: "y' (R' U' R U) U (R' U' R U) (R' U' R)"},
         %{image_name: "friedrich-f2l-36.png", text: "(U2 R U R') (U R U' R')"},
@@ -49,7 +49,7 @@ defmodule RubiksWeb.SharedView do
         %{image_name: "friedrich-f2l-32.png", text: "(R U2 R') (U' R U R')"},
         %{image_name: "friedrich-f2l-33.png", text: "(F' U2 F) (U F' U' F)"}
       ],
-      "6nd Corner in bottom, edge in middle" => [
+      "6th Corner in bottom, edge in middle" => [
         %{image_name: "friedrich-f2l-51.png", text: "(R U' R' d R' U2 R) (U R' U2 R)"},
         %{image_name: "friedrich-f2l-49.png", text: "(R U' R' U R U2 R') (U R U' R')"},
         %{image_name: "friedrich-f2l-50.png", text: "(R U' R' U' R U R') (U' R U2 R')"},
