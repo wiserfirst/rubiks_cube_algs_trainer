@@ -18,6 +18,15 @@ config :rubiks_web, RubiksWeb.Endpoint,
   render_errors: [view: RubiksWeb.ErrorView, accepts: ~w(html json)],
   pubsub_server: RubiksWeb.PubSub
 
+# Configure esbuild (the version is required)
+config :esbuild,
+  version: "0.12.18",
+  default: [
+    args: ~w(js/app.js --bundle --target=es2016 --outdir=../priv/static/assets),
+    cd: Path.expand("../apps/rubiks_web/assets", __DIR__),
+    env: %{"NODE_PATH" => Path.expand("../deps", __DIR__)}
+  ]
+
 # Configures Elixir's Logger
 config :logger, :console, format: "$time $metadata[$level] $message\n"
 

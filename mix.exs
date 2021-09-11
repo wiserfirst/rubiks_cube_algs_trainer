@@ -18,6 +18,7 @@ defmodule Rubiks.Umbrella.Mixfile do
     [
       "ecto.setup": ["ecto.migrate", "run apps/rubiks/priv/repo/seeds.exs"],
       "ecto.reset": ["ecto.drop", "ecto.setup"],
+      "assets.deploy": ["esbuild default --minify", "phx.digest"],
       test: ["ecto.reset", "ecto.migrate", "test"]
     ]
   end
