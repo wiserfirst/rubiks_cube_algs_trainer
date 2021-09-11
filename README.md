@@ -30,7 +30,7 @@ createuser -d postgres
 ### Elixir, Erlang and Nodejs
 
 If you use [asdf](https://asdf-vm.com/), you can install the appropriate
-versions of Elixir, Erlang and Nodejs with just one command:
+versions of Elixir and Erlang with just one command:
 
 ```sh
 asdf install
@@ -39,14 +39,6 @@ asdf install
 Otherwise, please refer to the `.tool-versions` file and install the correct
 versions with your tool of choice or manually.
 
-### Yarn
-
-To install yarn globally:
-
-```sh
-npm -g install yarn
-```
-
 ## Initial setup
 
 To install the Elixir dependencies and setup the database:
@@ -54,13 +46,6 @@ To install the Elixir dependencies and setup the database:
 ```sh
 mix deps.get
 mix ecto.setup
-```
-
-Also need to install the Nodejs (frontend) dependencies with:
-
-```sh
-cd apps/rubiks_web/assets
-yarn install
 ```
 
 ## Local development
