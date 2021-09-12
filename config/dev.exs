@@ -42,15 +42,15 @@ config :rubiks_web, RubiksWeb.Endpoint,
 # different ports.
 
 # Watch static and templates for browser reloading.
-# config :rubiks_web, RubiksWeb.Endpoint,
-#   live_reload: [
-#     patterns: [
-#       ~r{priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$},
-#       ~r{priv/gettext/.*(po)$},
-#       ~r{lib/rubiks_web/views/.*(ex)$},
-#       ~r{lib/rubiks_web/templates/.*(eex)$}
-#     ]
-#   ]
+config :rubiks_web, RubiksWeb.Endpoint,
+  live_reload: [
+    patterns: [
+      ~r{priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$},
+      ~r{priv/gettext/.*(po)$},
+      ~r{lib/rubiks_web/views/.*(ex)$},
+      ~r{lib/rubiks_web/templates/.*(eex)$}
+    ]
+  ]
 
 # Do not include metadata nor timestamps in development logs
 config :logger, :console, format: "[$level] $message\n"

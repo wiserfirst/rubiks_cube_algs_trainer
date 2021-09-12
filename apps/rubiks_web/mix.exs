@@ -37,10 +37,11 @@ defmodule RubiksWeb.Mixfile do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
-      {:phoenix, "~> 1.6.0-rc.0"},
+      {:phoenix, "~> 1.6.0-rc.0", override: true},
       {:phoenix_pubsub, "~> 2.0"},
       {:phoenix_ecto, "~> 4.0"},
       {:phoenix_html, "~> 3.0"},
+      {:phoenix_live_reload, "~> 1.0", only: :dev},
       {:esbuild, "~> 0.2", runtime: Mix.env() == :dev},
       {:gettext, "~> 0.11"},
       {:rubiks, in_umbrella: true},
