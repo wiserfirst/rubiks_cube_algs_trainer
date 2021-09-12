@@ -41,6 +41,7 @@ defmodule RubiksWeb.Mixfile do
       {:phoenix_pubsub, "~> 2.0"},
       {:phoenix_ecto, "~> 4.0"},
       {:phoenix_html, "~> 3.0"},
+      {:phoenix_live_view, "~> 0.16.0"},
       {:phoenix_live_reload, "~> 1.0", only: :dev},
       {:esbuild, "~> 0.2", runtime: Mix.env() == :dev},
       {:gettext, "~> 0.11"},
