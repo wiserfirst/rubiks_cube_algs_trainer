@@ -117,7 +117,6 @@ div.roofpig {
 body div.wrapper {
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   font-size: 1.1em;
-  background: #fafafa;
 }
 
 p {
@@ -283,7 +282,7 @@ CONTENT STYLE
 #content {
   margin-left: 45%;
   padding: 20px;
-  min-height: 100vh;
+  min-height: 100%;
   transition: all 0.3s;
 }
 
